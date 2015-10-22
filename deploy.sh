@@ -8,7 +8,7 @@ ln -sf ~/.vim/.vimrc ~/.vimrc
 apt-get -q -y install silversearcher-ag
 
 # Reinstall Vundle
-cd bundle
+cd ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git Vundle.vim
 
 # Install the goodies.
