@@ -10,6 +10,7 @@ Plugin 'alvan/vim-closetag'
 Plugin 'pangloss/vim-javascript'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'FelikZ/ctrlp-py-matcher'
+Plugin 'fatih/vim-go'
 
 call vundle#end()   
 
@@ -37,9 +38,9 @@ if executable('ag')
         \ --ignore .git
         \ --ignore .svn
         \ --ignore .modman
+        \ --ignore magento/vendor
         \ --ignore node_modules
         \ --ignore bower_components
-        \ --ignore vendor
         \ --ignore .hg
         \ --ignore .DS_Store
         \ --ignore "**/*.pyc"
@@ -49,3 +50,5 @@ endif
 :set relativenumber
 :highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 :set numberwidth=3
+
+au FileType go setlocal ts=8 sw=8 expandtab
